@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Application -->
+    <div id="app">
+        <!-- Dashboard -->
+        <div class="dashboard">
+            <div class="control">
+                <!-- Header Application -->
+                <header class="control-header">
+                    <h4>Now playing:</h4>
+                    <h2 class="song-current">Sting 57th & 9th</h2>
+                </header>
+
+                <!-- Avatar Song -->
+                <div class="avatar">
+                    <div class="avatar-disk">
+                    </div>
+                </div>
+
+                <!-- Control Options -->
+                <div class="control-options">
+                    <div class="btn btn-redo cursor">
+                        <div class="bgr-btn"></div>
+                        <i class="fas fa-redo"></i>
+                    </div>
+                    <div class="btn btn-backward cursor">
+                        <div class="bgr-btn"></div>
+                        <i class="fas fa-step-backward"></i>
+                    </div>
+                    <div class="btn btn-toggle cursor">
+                        <div class="bgr-btn"></div>
+                        <i class="fas fa-pause icon-pause"></i>
+                        <i class="fas fa-play icon-play"></i>
+                    </div>
+                    <div class="btn btn-forward cursor">
+                        <div class="bgr-btn"></div>
+                        <i class="fas fa-step-forward"></i>
+                    </div>
+                    <div class="btn btn-random cursor">
+                        <div class="bgr-btn"></div>
+                        <i class="fas fa-random"></i>
+                    </div>
+                </div>
+
+                <!-- Range -->
+                <div class="slider-handle">
+                    <input type="range" name="" id="progress" value="0" step="1" min="0" max="100">
+                </div>
+
+                <!-- Audio -->
+                <audio id="audio" src=""></audio>
+            </div>
+        </div>
+        
+        <!-- Play List -->
+        <div class="playlist">
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
